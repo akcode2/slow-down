@@ -11,13 +11,13 @@
     <!-- Target audience: People who drive 5-15 miles above the speed limit -->
 
     <h1> Short trip using residential roads </h1>
-    <h2>Speed Limit: <input type="number" id="resSpeedLimit" min="25" step="5" max="35" placeholder="25" autocomplete="off"> </h2>
-    If I drive <input type="number" id="resDistance" name="resDistance" min="2" placeholder="4" autocomplete="off"> miles to get groceries,
-    it would take me <output id="resTime" name="resTime" for="resDistance resSpeedLimit"></output> to get to the store.<br>
+    <label for="resSpeedLimit">Speed Limit: <input type="number" id="resSpeedLimit" min="25" step="5" max="35" value="25" autocomplete="off"></label><br>
+    If I drive <input type="number" id="resDistance" name="resDistance" min="2" value="4" autocomplete="off"> miles to get groceries,
+    it would take me <output id="resTime" name="resTime" for="resDistance resSpeedLimit"></output> minutes to get to the store.<br>
     If I go over the speed limit by <br>
-    5 mph, then it would take me <output id="resTimeIfBy5" for="resDistance speedOverBy5"></output> minutes, a difference of <output id="resDifferenceifBy5" for="resTimeIfBy5 resTime"></output> minutes.<br>
-    10 mph, then it would take <output id="resTimeIfBy10" for="resDistance speedOverBy10"></output>minutes, a difference of <output id="resDifferenceifBy10" for="resTimeIfBy10 resTime"></output> minutes.<br>
-    15 mph, then it would take <output id="resTimeIfBy15" for="resDistance speedOverBy15"></output>minutes, a difference of <output id="resDifferenceifBy15" for="resTimeIfBy15 resTime"></output> minutes.
+    5 mph, then it would take me <output id="resTimeIfBy5" for="resDistance speedOverBy5"></output> minutes, a difference of <output id="resDifferenceIfBy5" for="resTimeIfBy5 resTime"></output> minutes.<br>
+    10 mph, then it would take <output id="resTimeIfBy10" for="resDistance speedOverBy10"></output> minutes, a difference of <output id="resDifferenceIfBy10" for="resTimeIfBy10 resTime"></output> minutes.<br>
+    15 mph, then it would take <output id="resTimeIfBy15" for="resDistance speedOverBy15"></output> minutes, a difference of <output id="resDifferenceIfBy15" for="resTimeIfBy15 resTime"></output> minutes.
     
     <script src="./script.js" defer></script> 
 </body>
