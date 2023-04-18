@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The faster you drive, the less time you save</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- action attribute deliberately left out -->
+    <!-- <form method="get">
+        Distance
+        <input type="number" id="distance" name="distance" min="0" />
+        <br> <br>
+        Speed
+        <input type="number" id="velocity" name="velocity" min="5" />
+        <input type="submit">
+        <script src="./script.js"></script> 
+    </form> -->
+    <form>
+        If you drive <input type="text" id="distance" name="distance" placeholder="5" autocomplete="off" autofocus> miles 
+        at <input type="text" id="velocity" name="velocity" min="5" placeholder="35" autocomplete="off"> miles per hour, 
+        then you will reach your destination in 
+        <output id="travelTime" name="travelTime" for="distance velocity"></output></span>. 
+        Assuming a speed limit of Saving you <span id="timeSaved">___</span> minutes.
+    </form>
+    <script src="./script.js" defer></script> 
+</body>
+</html>
+
