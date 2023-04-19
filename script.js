@@ -39,7 +39,24 @@ function toTwoDecimals(num) {
     return Math.round(num * 100) / 100;
 }
 
-
+// Get residential destination span
+const resDestination = document.getElementById('resDestination');
+const destinations = [
+    "to the post office",
+    "to the grocery store", 
+    "to pick up some flowers",
+    "to get some coffee",
+    "to pick up the kids",
+    "to catch up with a friend"
+]
+let destIndex = 0;
+// Change resDestination's text every 3 seconds
+setInterval(() => {
+    // Increment the index, resetting to 0 when reaching the length of the index
+    destIndex = (destIndex + 1) % destinations.length;
+    // Change the text
+    resDestination.textContent = destinations[destIndex];
+}, 2000);
 
 
 

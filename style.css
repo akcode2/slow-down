@@ -1,9 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Overpass:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Overpass:wght@700&display=swap');
+
+body {
+    margin: 0;
+}
+/* aka #resDistance */
 input[type="number"] {
-    width: 6ch;
+    width: 2ch;
+    background-color: #18a558;
+    color: #ecf87f;
+    border: 0;
+    font-family: 'Alfa Slab One';
+    font-size: 7rem;
+    margin-left: 1rem;
+}
+
+/* Remove arrows on number input field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .sign {
+    display: flex;
+    flex-direction: column;
     height: 16rem;
     width: 12rem;
     border: 10px solid black;
@@ -12,7 +38,7 @@ input[type="number"] {
     border-radius: 10px;
     font-family: 'Overpass';
     text-align: center;
-    margin: 2px;
+    margin: 50px;
 }
 
 .signTitle {
@@ -25,6 +51,8 @@ input[type="number"] {
 }
 
 .yourspeed {
+    display: flex;
+    flex-direction: column;
     height: 18rem;
     width: 12rem;
     border: 10px solid black;
@@ -32,6 +60,7 @@ input[type="number"] {
     background-color: #F7B500;
     font-family: 'Overpass';
     text-align: center;
+    margin: 100px;
 }
 
 .speedDisplay {
@@ -51,9 +80,29 @@ input[type="number"] {
     0 0 151px #FDDA0D;
 }
 
-.atTheLimit {
-    height: 100%;
+.driveAtTheLimit {
+    display: flex;
+    flex-direction: column;
+    
+    height: 50vh;
     width: 100%;
     background-color: #18a558;
     color: #ffa384;
+    font-family: 'Alfa Slab One';
+    font-size: 1rem;
+}
+
+.driveAtTheLimit > #ifIDrive {
+    color: orange;
+}
+
+
+
+
+#miles {
+    font-size: 3rem;
+}
+
+.signFlex {
+    display:flex;
 }

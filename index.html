@@ -10,13 +10,21 @@
 </head>
 <body>
     <!-- Target audience: People who drive 5-15 miles above the speed limit -->
-    <div class="atTheLimit">
-        If I drive <input type="number" id="resDistance" name="resDistance" min="2" value="4" autocomplete="off">
-        <div class="sign">
-            <div class="signTitle">SPEED LIMIT</div>
-            <div class="signSpeed">
-                35
+    <div class="driveAtTheLimit">
+        <div id="ifIDrive">
+            If I drove <span id="resDestination"></span>
+        </div>
+        <div>
+            <input type="number" id="resDistance" name="resDistance" min="2" value="4" autocomplete="off"> <span id="miles">miles</span> at
+        </div>
+        <div class="signFlex">
+            <div class="sign">
+                <div class="signTitle">SPEED LIMIT</div>
+                <div class="signSpeed">
+                    35
+                </div>
             </div>
+            I would get there in
         </div>
     </div>
 
