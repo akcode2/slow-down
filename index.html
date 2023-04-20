@@ -10,36 +10,65 @@
 </head>
 <body>
     <!-- Target audience: People who drive 5-15 miles above the speed limit -->
-    <div class="driveAtTheLimit">
-        <div id="ifIDrive">
-            If I drove <span id="resDestination"></span>
-        </div>
-        <div>
-            <input type="number" id="resDistance" name="resDistance" min="2" value="4" autocomplete="off"> <span id="miles">miles</span> at
-        </div>
-        <div class="signFlex">
-            <div class="sign">
-                <div class="signTitle">SPEED LIMIT</div>
-                <div class="signSpeed">
-                    35
+    <div class="container">
+        <div class="driveAtTheLimit">
+            <div id="ifIDrove">
+                If I drove 
+            </div>
+            <div id="centerFlex">
+                <div id="xMilesAt">
+                    <div>
+                        <input type="number" id="resDistance" name="resDistance" min="2" value="4" autocomplete="off"> 
+                    </div>
+                    <div id="milesAt">
+                        <span id="miles">miles </span><span id="at">at</span>
+                    </div>
+                    <div class="sign">
+                        <div class="signTitle">SPEED LIMIT</div>
+                        <div id="resSpeedLimit">
+                            35
+                        </div>
+                    </div>
                 </div>
             </div>
-            I would get there in
+            <div id="bottomFlex">
+                <span id="resDestination">to the post office</span>
+                <div>I would get there in</div>
+                <div><output id="resTime" name="resTime" for="resDistance resSpeedLimit"></output> <span id="resDistMinutes">minutes</span></div>
+            </div>
         </div>
+        <div class="driveOverTheLimit">
+            <div id="ifIDroveOTL">If I drove over the limit</div>
+            <div class="otlCenterFlex">
+                <div class="yourSpeedSign">
+                    <div class="signTitle">YOUR SPEED</div>
+                    <div class="speedDisplay">40</div>
+                </div>
+                <div id="speedTime">
+                    <div id="getThereOTL">
+                        I would get there in
+                    </div>
+                    <div>
+                        <output id="resTimeIfSpeeding" for="resDistance speedDisplay"></output>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+ 
     </div>
+    
 
 
-    <div class="yourspeed">
-        <div class="signTitle">YOUR SPEED</div>
-        <div class="speedDisplay yourspeed5">40</div>
 
-    </div>
     
     <div class="resTrips">
         <h1> Short trip using residential roads </h1>
     <label for="resSpeedLimit">Speed Limit: <input type="number" id="resSpeedLimit" min="25" step="5" max="35" value="25" autocomplete="off"></label><br>
     If I drive <input type="number" id="resDistance" name="resDistance" min="2" value="4" autocomplete="off"> miles to get groceries,
-    it would take me <output id="resTime" name="resTime" for="resDistance resSpeedLimit"></output> minutes to get to the store.<br>
+    it would take me  to get to the store.<br>
     If I go over the speed limit by <br>
     5 mph, then it would take me <output id="resTimeIfBy5" for="resDistance speedOverBy5"></output> minutes, a difference of <output id="resDifferenceIfBy5" for="resTimeIfBy5 resTime"></output> minutes.<br>
     10 mph, then it would take <output id="resTimeIfBy10" for="resDistance speedOverBy10"></output> minutes, a difference of <output id="resDifferenceIfBy10" for="resTimeIfBy10 resTime"></output> minutes.<br>
